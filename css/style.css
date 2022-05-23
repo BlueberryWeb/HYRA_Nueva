@@ -19,17 +19,68 @@
 .light{
     font-family: 'Tili Light';
 }
+/*VIDEO INDEX*/
 #header{
-    background-image: url('../img/bg-index.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 80vh;
+    position: relative;
+}
+.section__index video{
+    max-width: 100%;
+    padding: 0px 0px 0px 0px;
+    z-index: 0;
+    position: absolute;
+}
+.menu-compu{
+    position: relative;
 }
 .logo-header{
-    max-width: 200px;
+    max-width: 180px;
 }
+.logo-static{
+    max-width: 180px;
+}
+/*TERMINA VIDEO INDEX*/
+/*VIDEO SOMOS*/
+.video-somos{
+    max-width: 100%;
+    padding: 0px 0px 0px 0px;
+    z-index: 0;
+    position: absolute;
+}
+.video-somos-letras{
+    position: relative;
+    color: #fff;
+    margin-top: 9rem;
+}
+.bg-lap{
+    position: absolute; 
+    padding: 0px 0px 0px 0px;
+    z-index: 0;
+    right: 0;
+}
+.bg-lap-texto{
+    position: relative;
+    left: 120px;
+    z-index: 2;
+}
+.video-contacto{
+    position: absolute;
+    width: 75%; 
+    z-index: 0;
+    right: 0;
+}
+.video-contacto-texto{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    left: 150px;
+    margin-top: 200px;
+}
+.vid-contact{
+    max-width: 100%;
+    padding: 0px 0px 0px 0px;
+    z-index: 0;
+}
+/*TERMINA VIDEO SOMOS*/
 .none_a_decoration{
     text-decoration: none;
     color: #fff;
@@ -56,6 +107,19 @@
     color: #fff;
     height: 40vh;
     width: 100%;
+    margin-top: 200px;
+}
+.bg-gris{
+    background-color: #1E1E1E;
+    color: #fff;
+}
+.bg-somos{
+    position: relative;
+}
+.bg-somos-letras{
+    position: relative;
+    margin-left: -100px;
+    margin-top: 90px;
 }
 /* TERMINA FONDOS */
 .formulario{
@@ -107,11 +171,50 @@ ul li::before{
     top: 30%;
     left: 36%;
 }
+.menu-hover span{
+    visibility: hidden;
+}
+.menu-hover:hover{
+    visibility: visible;
+}
+.loop{
+    max-width: 200px;
+}
+.iconos-somos{
+    max-width: 80px;
+}
+.icono-static{
+    max-width: 50px;
+    float: left;
+}
+.icono-contacto{
+    max-width: 100px;
+}
+.sobre-nosotros{
+    margin-top: 150px;
+}
+.seguridad-confianza{
+    position: relative;
+}
+.seguridad-confianza-letras{
+    position: relative;
+    margin-left: -100px;
+    margin-top: 150px;
+}
 @media (max-width:400px) {
     .overlay-image{
         top: 10%;
         left: 45%;
         max-width: 50px;
+    }
+    .bg-letras{
+        margin-top: 100px;
+    }
+    .bg-somos-letras{
+        margin-left: 20px;
+    }
+    .seguridad-confianza-letras{
+        margin-left: 5px;
     }
 }
 @media (max-width:500px) {
@@ -120,11 +223,29 @@ ul li::before{
         left: 45%;
         max-width: 50px;
     }
+    .bg-letras{
+        margin-top: 100px;
+    }
+    .bg-somos-letras{
+        margin-left: 20px;
+    }
+    .seguridad-confianza-letras{
+        margin-left: 5px;
+    }
 }
 @media (max-width:700px) {
     .overlay-image{
         top: 10%;
         left: 45%;
         max-width: 50px;
+    }
+    .bg-letras{
+        margin-top: 100px;
+    }
+    .bg-somos-letras{
+        margin-left: 20px;
+    }
+    .seguridad-confianza-letras{
+        margin-left: 5px;
     }
 }
