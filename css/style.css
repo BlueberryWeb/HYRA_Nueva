@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Tili Bold';
+    src: url("fonts/TitilliumWeb-Bold.ttf");   
+}
+@font-face {
+    font-family: 'Tili Light';
+    src: url("fonts/TitilliumWeb-Light.ttf");   
+}
+@font-face {
+    font-family: 'Tili Regular';
+    src: url("fonts/TitilliumWeb-Regular.ttf"); 
+}
+.regular{
+    font-family: 'Tili Regular';
+}
+.bold{
+    font-family: 'Tili Bold';
+}
+.light{
+    font-family: 'Tili Light';
+}
+#header{
+    background-image: url('../img/bg-index.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+.logo-header{
+    max-width: 200px;
+}
+.none_a_decoration{
+    text-decoration: none;
+    color: #fff;
+}
+.none_a_decoration:hover{
+    color: #fff;
+}
+.menu-desk{
+    color: #fff;
+}
+.menu-desk a{
+    color: #fff;
+}
+/* FONDOS */
+.index{
+    background-color: #000000;
+    color: #fff;
+}
+.bg-letras{
+    background-image: url('../img/hyra-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: #fff;
+    height: 40vh;
+    width: 100%;
+}
+/* TERMINA FONDOS */
+.formulario{
+    color: #fff;
+}
+.borde-bottom{
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+}
+.formulario input{
+    background: transparent;
+}
+.formulario ::placeholder{
+    color: #fff;
+    font-family: 'Tili Regular';
+}
+.btn-formulario{
+    background: transparent;
+    border: none;
+}
+.decoration-list ul{
+    list-style: none;
+}
+.no-decoration-list{
+    list-style: none;
+}
+.icono-formulario{
+    max-width: 25px;
+}
+ul li::before{
+    content: "\25AA";  
+    color: #fff;
+    margin-right: 0.2em;
+    font-weight: bold;
+    font-size:1.1rem;
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+.overlay-image{
+    color: #000;
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    top: 30%;
+    left: 36%;
+}
+@media (max-width:400px) {
+    .overlay-image{
+        top: 10%;
+        left: 45%;
+        max-width: 50px;
+    }
+}
+@media (max-width:500px) {
+    .overlay-image{
+        top: 10%;
+        left: 45%;
+        max-width: 50px;
+    }
+}
+@media (max-width:700px) {
+    .overlay-image{
+        top: 10%;
+        left: 45%;
+        max-width: 50px;
+    }
+}
