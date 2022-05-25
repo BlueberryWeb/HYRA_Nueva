@@ -157,11 +157,8 @@
 .decoration-list ul{
     list-style: none;
 }
-.no-decoration-list{
-    list-style: none;
-}
 
-.no-decoration-list ul li::before{
+ ul li::before{
     content: "\25AA";  
     color: #fff;
     margin-right: 0.2em;
