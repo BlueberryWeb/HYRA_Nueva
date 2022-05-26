@@ -11,139 +11,130 @@
     <title>HYRA</title>
 </head>
 <body>
-    <section id="header">
-    <div class="section__index">
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="w-100">
-            <source src="vid/index-header.mp4" type="video/mp4" />
-        </video>
-    </div>
-    <div class="container menu-compu">
-        <div class="row pt-5">
-            <img src="img/Logo-Hyra-ease-in.gif" alt="HYRA" class="img-fluid logo-header"/>
-        </div>
-        <div class="row d-flex justify-content-end">
-            <div class="col-12 col-lg-6 col-sm-12 col-md-12 "></div>
-            <div class="col-12 col-lg-5 col-sm-12 col-md-12 d-none d-sm-none d-md-block menu-desk py-5 light">
-                <div class="row ">
-                    <div class="col-12 col-lg-1 col-sm-12 col-md-12 pt-3">
-                        <span>01</span>
+    <header id="header" class="bg-gris side-menu active">
+        <nav class="navbar navbar-expand-lg navbar-light bg-gris ">
+            <div class="container pt-3">
+              <a class="navbar-brand" href="index.html">
+                  <img src="img/Logo-Hyra-ease-in.gif" alt="HYRA" class="img-fluid logo-header" />
+              </a>
+              <div class="navbar-nav ml-auto" > 
+                    <div class="button_container ms-3">
+                        <h1 class="h6 bold">
+                            MENU
+                            <img src="img/btn-menu.png" alt="HYRA" class="img-fluid ms-4 me-4"/>
+                            <img src="img/flecha.png" alt="HYRA" class="img-fluid"/>
+                        </h1>
                     </div>
-                    <div class="col-12 col-lg-8 col-sm-12 col-md-12">
-                        <div class="menu" data-animation="to-top">
-                            <a href="index.html" class="none_a_decoration">
-                                <span><h1>INICIO</h1></span>
-                                <span class="hover-menu">BIENVENIDO AL MUNDO HYRA</span>
-                            </a>
-                        </div>
-                    </div>
+              </div>
+            </div>
+          </nav>
+          <div class="container-fluid bg-gris py-5 side-menu active">
+            <div class="row">
+                <div class="col-12 col-lg-9 col-sm-12 col-md-12 bg-somos p-0">
+                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="w-100">
+                        <source src="vid/Sobre_Hyra.mp4" type="video/mp4" />
+                    </video>
                 </div>
-                <div class="row">
-                    <div class="col-12 col-lg-1 col-sm-12 col-md-12 pt-3">
-                        <span>02</span>
-                    </div>
-                    <div class="col-12 col-lg-8 col-sm-12 col-md-12">
-                        <div class="menu" data-animation="to-top">
-                            <a href="sobre.html" class="none_a_decoration"> 
-                                <span><h1>SOBRE HYRA</h1></span>
-                                <span class="hover-menu" >CONOCE TODO SOBRE HYRA</span>
-                            </a>
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-lg-1 col-sm-12 col-md-12 pt-3">
-                        <span>03</span>
-                    </div>
-                    <div class="col-12 col-lg-8 col-sm-12 col-md-12">
-                        <div class="menu" data-animation="to-top">
-                            <a href="unidades.html" class="none_a_decoration">
-                                <span><h1>UNIDADES</h1></span> 
-                                <span class="hover-menu">CONOCE NUESTRAS UNIDADES</span>
-                            </a>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-lg-1 col-sm-12 col-md-12 pt-3">
-                        <span>04</span>
-                    </div>
-                    <div class="col-12 col-lg-8 col-sm-12 col-md-12">
-                        <div class="menu" data-animation="to-top">
-                            <a href="funcionamiento.html" class="none_a_decoration">
-                                <span><h1>CÓMO FUNCIONA</h1></span>
-                                <span class="hover-menu">TE EXPLICAMOS CÓMO RENTAR</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-lg-1 col-sm-12 col-md-12 pt-3">
-                        <span>05</span>
-                    </div>
-                    <div class="col-12 col-lg-8 col-sm-12 col-md-12">
-                        <div class="menu" data-animation="to-top">
-                            <a href="contacto.html" class="none_a_decoration">
-                                <span><h1>CONTACTO</h1></span>
-                                <span>¿TIENES DUDAS O COMENTARIOS?</span>
-                            </a>
-                            
-                        </div>
-                        
-                    </div>
+                <div class="col-12 col-lg-3 col-sm-12 col-md-12 p-0 bg-somos-letras">
+                    <h1 class="bold">LA LOGÍSTICA <br>INTELIGENTE <b class="regular">PARA <br> TU EMPRESA</b></h1>
+                    <p class="light">Renta de vehículos de carga sin operador para <br>
+                    transportar mercancía de cualquier giro dentro del <br>
+                    territorio nacional.</p>
+                    <a href="funcionamiento.html" class="none_a_decoration">
+                        <h3 class="h6"><u>CÓMO FUNCIONA</u> 
+                            <img src="img/flecha.png" alt="HYRA" class="img-fluid"/>
+                        </h3>
+                    </a>
                 </div>
             </div>
         </div>
+    </header>
+    <div class="menu-side">
+        <div class="row pt-5 ms-2">
+            <div class="col-12 col-lg-6 col-sm-12 col-md-12">
+            <img src="img/logo_sidemenu.png" alt="HYRA" class="img-fluid logo-header"/>
+            </div>
+            <div class="col-12 col-lg-6 col-sm-12 col-md-12">
+                <div class="button_container ms-3">
+                    <h1 class="h6 regular">
+                        CERRAR
+                        <img src="img/btn-menu.png" alt="HYRA" class="img-fluid ms-4 me-4"/> <br>
+                        <img src="img/flecha.png" alt="HYRA" class="img-fluid"/>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="row ms-2 py-3">
+            <div class="col-12 col-lg-1 col-sm-12 col-md-12 pt-3">
+                <span>01</span>
+            </div>
+            <div class="col-12 col-lg-8 col-sm-12 col-md-12">
+                <div class="menu" data-animation="to-top">
+                    <a href="index.html" class="none_a_decoration">
+                        <span><h1>INICIO</h1></span>
+                        <span class="hover-menu">BIENVENIDO AL MUNDO HYRA</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row ms-2 py-3">
+            <div class="col-12 col-lg-1 col-sm-12 col-md-12 pt-3">
+                <span>02</span>
+            </div>
+            <div class="col-12 col-lg-8 col-sm-12 col-md-12">
+                <div class="menu" data-animation="to-top">
+                    <a href="sobre.html" class="none_a_decoration"> 
+                        <span><h1>SOBRE HYRA</h1></span>
+                        <span class="hover-menu" >CONOCE TODO SOBRE HYRA</span>
+                    </a>
+                </div>
+               
+            </div>
+        </div>
+        <div class="row ms-2 py-3">
+            <div class="col-12 col-lg-1 col-sm-12 col-md-12 pt-3">
+                <span>03</span>
+            </div>
+            <div class="col-12 col-lg-8 col-sm-12 col-md-12">
+                <div class="menu" data-animation="to-top">
+                    <a href="unidades.html" class="none_a_decoration">
+                        <span><h1>UNIDADES</h1></span> 
+                        <span class="hover-menu">CONOCE NUESTRAS UNIDADES</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="row ms-2 py-3">
+            <div class="col-12 col-lg-1 col-sm-12 col-md-12 pt-3">
+                <span>04</span>
+            </div>
+            <div class="col-12 col-lg-8 col-sm-12 col-md-12">
+                <div class="menu" data-animation="to-top">
+                    <a href="funcionamiento.html" class="none_a_decoration">
+                        <span><h1>CÓMO FUNCIONA</h1></span>
+                        <span class="hover-menu">TE EXPLICAMOS CÓMO RENTAR</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row ms-2 py-3">
+            <div class="col-12 col-lg-1 col-sm-12 col-md-12 pt-3">
+                <span>05</span>
+            </div>
+            <div class="col-12 col-lg-8 col-sm-12 col-md-12">
+                <div class="menu" data-animation="to-top">
+                    <a href="contacto.html" class="none_a_decoration">
+                        <span><h1>CONTACTO</h1></span>
+                        <span>¿TIENES DUDAS O COMENTARIOS?</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
     </div>
-    </section>
-
-<style>
-
-
-.menu {
-  display: flex;
-}
-.menu a {
-  position: relative;
-  display: block;
-  overflow: hidden;
-}
-.menu a span {
-  transition: transform 0.2s ease-out;
-}
-.menu a span:first-child {
-  display: inline-block;
-  padding: 10px;
-  width: 500px;
-
-}
-.menu a span:last-child {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  transform: translateY(-100%);
-  width: 500px;
-}
-.menu a:hover span:first-child {
-  transform: translateY(100%);
-}
-.menu a:hover span:last-child,
-.menu[data-animation] a:hover span:last-child {
-  transform: none;
-}
-.menu[data-animation="to-top"] a span:last-child {
-  transform: translateY(100%);
-}
-.menu[data-animation="to-top"] a:hover span:first-child {
-  transform: translateY(-100%);
-}
-
-
-</style>
+    
     
     
 

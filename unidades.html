@@ -4,13 +4,14 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://kit.fontawesome.com/4514d9060c.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="shortcut icon" href="img/favicon.png" />
     <title>HYRA</title>
 </head>
 <body class="index">
-    <header id="header" class="bg-gris">
+    <header id="header" class="bg-gris side-menu">
         <nav class="navbar navbar-expand-lg navbar-light bg-gris">
             <div class="container pt-3">
               <a class="navbar-brand" href="index.html">
@@ -27,72 +28,95 @@
               </div>
             </div>
           </nav>
-    </header>
-    <!--<section id="header">
-        <div class="section__index">
-            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="w-100">
-                <source src="vid/Nuestras Unidades.mp4" type="video/mp4" />
-            </video>
-        </div>
-        <div class="container menu-compu">
-            <div class="row d-flex justify-content-end">
-                <div class="col-12 col-lg-6 col-sm-12 col-md-12 "></div>
-                <div class="col-12 col-lg-5 col-sm-12 col-md-12 d-none d-sm-none d-md-block nuestras-unidades py-5 light">
-                    <a href="#" class="none_a_decoration">
-                        <h6 class="pt-5">
-                            <u>ESPECIFICACIONES </u>
-                            <img src="img/flecha.png" alt="HYRA" class="img-fluid"/>
-                        </h6>
-                    </a>
+          <section class="contenedor-videos side-menu">
+            <div class="section__index">
+                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="w-100">
+                    <source src="vid/Nuestras-Unidades.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div class="container menu-compu">
+                <div class="row d-flex justify-content-end">
+                    <div class="col-12 col-lg-6 col-sm-12 col-md-12 "></div>
+                    <div class="col-12 col-lg-5 col-sm-12 col-md-12 d-none d-sm-none d-md-block menu-desk py-5 light">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>-->
+        </section>
+    </header>
+   
+    <!--CAJA-->
     <div class="container-fluid py-5">
         <div class="row pt-5">
-            <div class="col-12 col-lg-7 col-sm-12 col-md-12 p-0">
+            <div class="col-12 col-lg-7 col-sm-12 col-md-12 p-0 caja">
                 <img src="img/caja.jpg" alt="HYRA" class="img-fluid"/>
             </div>
-            <div class="col-12 col-lg-5 col-sm-12 col-md-12">
-                <h1 class="bold">CAJA SECA</h1>
+            <div class="col-12 col-lg-5 col-sm-12 col-md-12 pt-5 caja-texto">
+                <h1 class="bold pt-5">CAJA SECA</h1>
                 <h1 class="light">DE GRAN CAPACIDAD</h1>
-                <p>Caja seca tipo cachucha con rieles logísticos <br>
+                <p class="light ms-3">Caja seca tipo cachucha con rieles logísticos <br>
                 para fijación de la mercancia</p>
                 <ul>
-                    <li>Largo interior 2.40 m</li>
-                    <li>Ancho interior 1.80 m</li>
-                    <li>Altura interior 1.80 m</li>
-                    <li>Cachucha (90 cm * 180 cm * 85 cm)</li>
-                    <li>Iluminaciín interna tipo led</li>
+                    <li>
+                        <h6>
+                            <i class="fa-solid fa-circle me-2"></i>
+                            Largo interior 2.40 m
+                        </h6>
+                    </li>
+                    <li>
+                        <h6>
+                            <i class="fa-solid fa-circle me-2"></i>
+                            Ancho interior 1.80 m
+                        </h6>
+                    </li>
+                    <li>
+                        <h6>
+                            <i class="fa-solid fa-circle me-2"></i>
+                            Altura interior 1.80 m
+                        </h6>
+                    </li>
+                    <li>
+                        <h6>
+                            <i class="fa-solid fa-circle me-2"></i>
+                            Cachucha (90 cm * 180 cm * 85 cm)
+                        </h6>
+                    </li>
+                    <li>
+                        <h6>
+                            <i class="fa-solid fa-circle me-2"></i>
+                            Iluminaciín interna tipo led
+                        </h6>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="container py-5">
+    <!--MONITOREO-->
+    <div class="container-fluid py-5">
         <div class="row">
-            <div class="col-12 col-lg-4 col-md-12 col-sm-12">
+            <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
+            <div class="col-12 col-lg-3 col-md-12 col-sm-12">
                 <h1 class="bold">MONITOREO <br>
                 EN TIEMPO REAL</h1>
-                <h1 class="light">CON 2 CÁMARAS DE <br>
-                SEGURIDAD</h1>
+                <h2 class="light h1">CON 2 CÁMARAS DE <br>
+                SEGURIDAD</h2>
                 <div class="">
-                    <img src="img/seguridad.gif" alt="HYRA" class="img-fluid icono-camara">
-                    <aside>
-                        <h2 class="bold h4">CÁMARA EN CABINA</h2>
-                        <p class="light">Para monitoreo constante en <br> el interior de la cabina.</p>
-                    </aside>                   
+                        <h2 class="bold h4">
+                            <img src="img/seguridad.gif" alt="HYRA" class="img-fluid icono-camara me-3">
+                            CÁMARA EN CABINA
+                        </h2>
+                        <p class="light">Para monitoreo constante en <br> el interior de la cabina.</p>                 
                 </div>
                 <div class="">
-                    <img src="img/seguridad.gif" alt="HYRA" class="img-fluid icono-camara">
-                    <aside>
-                        <h2 class="bold h4">CÁMARA EN CAJA</h2>
+                        <h2 class="bold h4">
+                            <img src="img/seguridad.gif" alt="HYRA" class="img-fluid icono-camara me-3">
+                            CÁMARA EN CAJA
+                        </h2>
                         <p class="light">Para monitorear en todo <br>
                         momento el estado de tus <br>
                         mercancias en tiempo real.</p>
-                    </aside>
                 </div>
             </div>
-            <div class="col-12 col-lg-8 col-md-12 col-sm-12 p-0">
+            <div class="col-12 col-lg-7 col-md-12 col-sm-12 p-0">
                 <img src="img/monitoreo.jpg" alt="HYRA" class="img-fluid "/>
             </div>
         </div>
@@ -110,10 +134,30 @@
                         El equipamiento de seguridad incluye:
                     </p>
                     <ul>
-                        <li>2 Chalecos de seguridad.</li>
-                        <li>2 Cascos de seguridad.</li>
-                        <li>2 Fajas de seguridad.</li>
-                        <li>Kit de primeros auxilios.</li>
+                        <li>
+                            <h6>
+                                <i class="fa-solid fa-circle me-2"></i>
+                                2 Chalecos de seguridad.
+                            </h6>
+                        </li>
+                        <li>
+                            <h6>
+                                <i class="fa-solid fa-circle me-2"></i>
+                                2 Cascos de seguridad.
+                            </h6>
+                        </li>
+                        <li>
+                            <h6>
+                                <i class="fa-solid fa-circle me-2"></i>
+                                2 Fajas de seguridad.
+                            </h6>
+                        </li>
+                        <li>
+                            <h6>
+                                <i class="fa-solid fa-circle me-2"></i>
+                                Kit de primeros auxilios.
+                            </h6>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -128,13 +172,39 @@
                         <h1 class="bold">ESPEJO <br> RETROVISOR</h1>
                         <h1 class="light">INTELIGENTE</h1>
                         <ul>
-                            <li>Grabación de Bucle (Adaptable a cualquier clima).</li>
-                            <li>Cámara trasera IP68 resistente a salpicaduras, agua y polvo.</li>
-                            <li>Visión Nocturna (waterproof).</li>
-                            <li>Líneas de reversa (IPS Full View LCD).</li>
-                            <li>Pantalla táctil de 9.8 pulgadas, cámara doble, Monitoreo de <br>
-                            Estacionamiento, G-Sensor, Angúlo de Visión, Detección de <br>
-                            Movimiento.</li>
+                            <li>
+                                <h6>
+                                    <i class="fa-solid fa-circle me-2"></i>
+                                    Grabación de Bucle (Adaptable a cualquier clima).
+                                </h6>
+                            </li>
+                            <li>
+                                <h6>
+                                    <i class="fa-solid fa-circle me-2"></i>
+                                    Cámara trasera IP68 resistente a salpicaduras, agua y polvo.
+                                </h6>
+                            </li>
+                            <li>
+                                <h6>
+                                    <i class="fa-solid fa-circle me-2"></i>
+                                    Visión Nocturna (waterproof).
+                                </h6>
+                            </li>
+                            <li>
+                                <h6>
+                                    <i class="fa-solid fa-circle me-2"></i>
+                                    Líneas de reversa (IPS Full View LCD).
+                                </h6>
+                            </li>
+                            <li>
+                                <h6>
+                                    <i class="fa-solid fa-circle me-2"></i>
+                                    Pantalla táctil de 9.8 pulgadas, cámara doble, Monitoreo de <br>
+                                    Estacionamiento, G-Sensor, Angúlo de Visión, Detección de <br>
+                                    Movimiento.
+                                </h6>
+                                
+                        </li>
                         </ul>
                     </div>
                     <div class="col-12 col-lg-4 col-sm-12 col-md-12"></div>
@@ -263,30 +333,93 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-3 col-sm-12 col-md-12">
-                    <img src="img/Logo-Hyra-ease-in.gif" alt="HYRA" class="img-fluid"/>
+                <div class="col-12 col-lg-4 col-sm-12 col-md-12">
+                    <img src="img/Logo-Hyra-ease-in.gif" alt="HYRA" class="img-fluid logo-footer pb-2"/>
                     <div class="">
                         <ul lass="list-inline">
-                            <li class="list-inline-item "><a href="#" class="none_a_decoration regular">331 8092 980</a> </li>
-                            <li class="list-inline-item "><a href="#" class="none_a_decoration regular">contacto@hyra.mx</a></li>
+                            <li class="list-inline-item ">
+                                <a href="#" class="none_a_decoration regular">
+                                    <h6 class="text-start">
+                                        331 8092 980
+                                    </h6>
+                                </a> 
+                            </li>
+                            <li class="list-inline-item ">
+                                <a href="#" class="none_a_decoration regular">
+                                    <h6>
+                                        <i class="fa-solid fa-square"></i>
+                                        contacto@hyra.mx
+                                    </h6>
+                                    
+                                </a>
+                            </li>
                         </ul>
                     </div>
-                    <span>©2022 HYRA. TODOS LOS DERECHOS RESERVADOS </span>
+                    <span class="light">
+                            ©2022 HYRA. TODOS LOS DERECHOS RESERVADOS
+                    </span>
                 </div>
                 <div class="col-12 col-lg-8 col-sm-12 col-md-12">
                     <div class="text-end">
                         <ul lass="list-inline decoration-list ">
-                            <li class="list-inline-item no-decoration-list"><a href="index.html" class="none_a_decoration">INICIO</a></li>
-                            <li class="list-inline-item"><a href="sobre.html" class="none_a_decoration regular">NOSOTROS</a></li>
-                            <li class="list-inline-item"><a href="unidades.html" class="none_a_decoration regular">UNIDADES</a></li>
-                            <li class="list-inline-item"><a href="funcionamiento.html" class="none_a_decoration regular">CÓMO FUNCIONA</a></li>
-                            <li class="list-inline-item"><a href="contacto.html" class="none_a_decoration regular">CONTACTO</a></li>
+                            <li class="list-inline-item no-decoration-list">
+                                <a href="index.html" class="none_a_decoration bold">
+                                    <h6>
+                                        INICIO
+                                    </h6>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="sobre.html" class="none_a_decoration bold">
+                                    <h6>
+                                        <i class="fa-solid fa-square"></i>
+                                        NOSOTROS
+                                    </h6>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="unidades.html" class="none_a_decoration bold">
+                                    <h6>
+                                        <i class="fa-solid fa-square"></i>
+                                        UNIDADES
+                                    </h6>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="funcionamiento.html" class="none_a_decoration bold">
+                                    <h6>
+                                        <i class="fa-solid fa-square"></i>
+                                        CÓMO FUNCIONA
+                                    </h6>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="contacto.html" class="none_a_decoration bold">
+                                    <h6>
+                                        <i class="fa-solid fa-square"></i>
+                                        CONTACTO
+                                    </h6>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div class="text-end">
                         <ul lass="list-inline">
-                            <li class="list-inline-item"><a href="#" class="none_a_decoration regular">TÉRMINOS Y CONDICIONES</a></li>
-                            <li class="list-inline-item"><a href="#" class="none_a_decoration regular">AVISO DE PRIVACIDAD</a></li>
+                            <li class="list-inline-item">
+                                <a href="#" class="none_a_decoration regular">
+                                    <h6>
+                                        TÉRMINOS Y CONDICIONES
+                                    </h6>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="none_a_decoration regular">
+                                    <h6>
+                                        <i class="fa-solid fa-square"></i>
+                                        AVISO DE PRIVACIDAD
+                                    </h6>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div class="text-end">

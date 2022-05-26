@@ -10,6 +10,15 @@
     font-family: 'Tili Regular';
     src: url("fonts/TitilliumWeb-Regular.ttf"); 
 }
+.fa-square, .fa-circle i{
+    background-color: #fff;
+    color: #fff;
+   
+}
+.fa-solid, .fas{
+    font-size: 0.4rem;
+    vertical-align: middle;
+}
 .regular{
     font-family: 'Tili Regular';
 }
@@ -17,6 +26,14 @@
     font-family: 'Tili Bold';
 }
 .light{
+    font-family: 'Tili Light';
+}
+.contenedor-videos{
+    position: relative;
+    margin-bottom: 650px;
+}
+ul{
+    list-style: none;
     font-family: 'Tili Light';
 }
 /*VIDEO INDEX*/
@@ -35,8 +52,11 @@
 .logo-header{
     max-width: 180px;
 }
+.logo-footer{
+    max-width: 200px;
+}
 .logo-static{
-    max-width: 180px;
+    max-width: 200px;
 }
 /*TERMINA VIDEO INDEX*/
 /*VIDEO SOMOS*/
@@ -122,12 +142,26 @@
     width: 100%;
     margin-top: 200px;
 }
+.bg-letras h3{
+    margin-top: 8rem;
+}
 .bg-gris{
     background-color: #1E1E1E;
     color: #fff;
 }
+.bg-funcion{
+    position: relative;
+    padding: 0px 0px 0px 0px;
+    margin-bottom: -50px;
+}
+.bg-funcion-texto{
+    position: relative;
+    margin-left: -100px;
+    margin-top: 150px;
+}
 .bg-somos{
     position: relative;
+    padding: 0px 0px 0px 0px;
 }
 .bg-somos-letras{
     position: relative;
@@ -154,17 +188,21 @@
     background: transparent;
     border: none;
 }
+.btn-formulario:hover{
+    background: transparent;
+    border: none;
+}
+/*
 .decoration-list ul{
     list-style: none;
 }
-
- ul li::before{
+ul li::before{
     content: "\25AA";  
     color: #fff;
-    margin-right: 0.2em;
+    margin-right: 0.4em;
     font-weight: bold;
     font-size:1.1rem;
-}
+}*/
 .overlay{
     position: absolute;
     height: 100%;
@@ -194,6 +232,7 @@
 .icono-camara{
     float: left;
     max-width: 50px;
+    margin-bottom: 3rem;
 }
 .iconos-somos{
     max-width: 80px;
@@ -213,6 +252,13 @@
 }
 .sobre-nosotros{
     margin-top: 150px;
+}
+.caja{
+    position: relative;
+}
+.caja-texto h1{
+    position: relative;
+    margin-left: -100px;
 }
 .seguridad-confianza{
     position: relative;
@@ -273,25 +319,23 @@
     color: #000;
 }
 /*MENÚ DEL INDEX*/
-
 .menu {
     display: flex;
-  }
-  .menu a {
+}
+.menu a {
     position: relative;
     display: block;
     overflow: hidden;
-  }
-  .menu a span {
+}
+.menu a span {
     transition: transform 0.2s ease-out;
-  }
-  .menu a span:first-child {
+}
+.menu a span:first-child {
     display: inline-block;
     padding: 10px;
-    width: 500px;
-  
-  }
-  .menu a span:last-child {
+    width: 500px;  
+}
+.menu a span:last-child {
     position: absolute;
     top: 0;
     right: 0;
@@ -300,21 +344,36 @@
     display: flex;
     transform: translateY(-100%);
     width: 500px;
-  }
-  .menu a:hover span:first-child {
+}
+.menu a:hover span:first-child {
     transform: translateY(100%);
-  }
-  .menu a:hover span:last-child,
-  .menu[data-animation] a:hover span:last-child {
+}
+.menu a:hover span:last-child,
+.menu[data-animation] a:hover span:last-child {
     transform: none;
-  }
-  .menu[data-animation="to-top"] a span:last-child {
+}
+.menu[data-animation="to-top"] a span:last-child {
     transform: translateY(100%);
-  }
-  .menu[data-animation="to-top"] a:hover span:first-child {
+}
+.menu[data-animation="to-top"] a:hover span:first-child {
     transform: translateY(-100%);
-  }
-  /*TERMMINA EL MENÚ DEL INDEX*/
+}
+/*TERMMINA EL MENÚ DEL INDEX*/
+/*SIDE MENU*/
+.side-menu.active{
+    right: 543px;
+    position: relative;
+}
+.menu-side{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #1E1E1E;
+}
+.menu-side a span{
+    color: #000000;
+}
+  /*TERMINA SIDE MENU*/
 @media (max-width:400px) {
     .overlay-image{
         top: 10%;
