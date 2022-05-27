@@ -11,14 +11,14 @@
     <title>HYRA</title>
 </head>
 <body>
-    <header id="header" class="bg-gris side-menu active">
+    <header id="header" class="bg-gris side-menu">
         <nav class="navbar navbar-expand-lg navbar-light bg-gris ">
             <div class="container pt-3">
               <a class="navbar-brand" href="index.html">
                   <img src="img/Logo-Hyra-ease-in.gif" alt="HYRA" class="img-fluid logo-header" />
               </a>
               <div class="navbar-nav ml-auto" > 
-                    <div class="button_container ms-3">
+                    <div class="button_container ms-3 " onclick="openNav()">
                         <h1 class="h6 bold">
                             MENU
                             <img src="img/btn-menu.png" alt="HYRA" class="img-fluid ms-4 me-4"/>
@@ -28,7 +28,7 @@
               </div>
             </div>
           </nav>
-          <div class="container-fluid bg-gris py-5 side-menu active">
+          <div class="container-fluid bg-gris py-5">
             <div class="row">
                 <div class="col-12 col-lg-9 col-sm-12 col-md-12 bg-somos p-0">
                     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="w-100">
@@ -49,13 +49,13 @@
             </div>
         </div>
     </header>
-    <div class="menu-side">
-        <div class="row pt-5 ms-2">
-            <div class="col-12 col-lg-6 col-sm-12 col-md-12">
-            <img src="img/logo_sidemenu.png" alt="HYRA" class="img-fluid logo-header"/>
+    <div class="menu-side" id="sidebar">
+        <div class="row pt-5 ms-2 d-flex justify-content-center">
+            <div class="col-12 col-lg-6 col-sm-12 col-md-12 text-center">
+            <img src="img/logo_sidemenu.png" alt="HYRA" class="img-fluid logo-header ms-5"/>
             </div>
-            <div class="col-12 col-lg-6 col-sm-12 col-md-12">
-                <div class="button_container ms-3">
+            <div class="col-12 col-lg-6 col-sm-12 col-md-12 text-center">
+                <div class="button_container ms-3" onclick="closeNav()">
                     <h1 class="h6 regular">
                         CERRAR
                         <img src="img/btn-menu.png" alt="HYRA" class="img-fluid ms-4 me-4"/> <br>
@@ -64,11 +64,11 @@
                 </div>
             </div>
         </div>
-        <div class="row ms-2 py-3">
+        <div class="row ms-2 py-3 d-flex justify-content-center light">
             <div class="col-12 col-lg-1 col-sm-12 col-md-12 pt-3">
                 <span>01</span>
             </div>
-            <div class="col-12 col-lg-8 col-sm-12 col-md-12">
+            <div class="col-12 col-lg-8 col-sm-12 col-md-12 light">
                 <div class="menu" data-animation="to-top">
                     <a href="index.html" class="none_a_decoration">
                         <span><h1>INICIO</h1></span>
@@ -77,7 +77,7 @@
                 </div>
             </div>
         </div>
-        <div class="row ms-2 py-3">
+        <div class="row ms-2 py-3 d-flex justify-content-center light">
             <div class="col-12 col-lg-1 col-sm-12 col-md-12 pt-3">
                 <span>02</span>
             </div>
@@ -91,7 +91,7 @@
                
             </div>
         </div>
-        <div class="row ms-2 py-3">
+        <div class="row ms-2 py-3 d-flex justify-content-center light" >
             <div class="col-12 col-lg-1 col-sm-12 col-md-12 pt-3">
                 <span>03</span>
             </div>
@@ -105,7 +105,7 @@
                 
             </div>
         </div>
-        <div class="row ms-2 py-3">
+        <div class="row ms-2 py-3 d-flex justify-content-center light">
             <div class="col-12 col-lg-1 col-sm-12 col-md-12 pt-3">
                 <span>04</span>
             </div>
@@ -118,8 +118,8 @@
                 </div>
             </div>
         </div>
-        <div class="row ms-2 py-3">
-            <div class="col-12 col-lg-1 col-sm-12 col-md-12 pt-3">
+        <div class="row ms-2 py-3 d-flex justify-content-center light">
+            <div class="col-12 col-lg-1 col-sm-12 col-md-12 pt-3 pb-5">
                 <span>05</span>
             </div>
             <div class="col-12 col-lg-8 col-sm-12 col-md-12">
@@ -134,12 +134,191 @@
             </div>
         </div>
     </div>
-    
+     <!--VIDEO-->
+     <div class="container-fluid index pb-5 ">
+        <div class="row">
+            <div class="video-somos">
+                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="w-100">
+                    <source src="vid/loop-somos.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-2 col-sm-12 col-md-12"></div>
+                <div class="col-12 col-lg-6 col-sm-12 col-md-12 video-somos-letras">
+                    <img src="img/Loop.gif" alt="HYRA" class="img-fluid loop pt-5"/>
+                    <h1 class="bold display-1">SIN LÍMITE</h1>
+                    <h1 class="regular ">DE KILÓMETROS</h1>
+                    <p class="light">Nuestro servicio por día y sin límite de kilómetros es la <br>
+                    diferencia con cualquier competencia del mercado.</p>
+                    <a href="unidades.html" class="none_a_decoration">
+                        <h1 class="h6 pt-3"><u>NUESTRAS UNIDADES</u> 
+                            <img src="img/flecha.png" alt="HYRA" class="img-fluid"/>
+                        </h1>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-4 col-sm-12 col-md-12"></div>
+            </div>
+        </div>
+    </div>
+     <!--SEGURIDAD, CONFORT Y CONFIANZA-->
+     <div class="container py-5 dipper">
+        <div class="row">
+            <div class="col-12 col-lg-8 col-sm-12 col-md-12 p-0 seguridad-confianza">
+                <img src="img/seguridad-confort.jpg" alt="SEGURIDAD, CONFORT Y CONFIANZA" class="img-fluid"/>
+            </div>
+            <div class="col-12 col-lg-4 col-sm-12 col-md-12 seguridad-confianza-letras">
+                <div>
+                    <h1 class="bold">SEGURIDAD, CONFORT <br>
+                    Y CONFIANZA</h1>
+                    <p class="light ms-5">Promovemos el uso de unidades de transporte con <br>
+                    los más elevados estándares de seguridad y confort <br>
+                    permitiendo que la lógistica de nuestros clientes se <br>
+                    vuelva más eficiente y efectiva.</p>
+                    <p class="light ms-5">Contamos con el mejor servicio y experiencia, <br>
+                    ofreciendo una alternativa tanto práctica como <br>
+                    efectiva para transportar tu mercancía a través de <br>
+                    vehículos modernos y seguros que permitirán llevar <br>
+                    tu compañía al siguiente nivel.</p>
+                    <a href="funcionamiento.html" class="none_a_decoration">
+                        <h6 class="text-end pt-5">
+                            <u>CÓMO FUNCIONA</u>
+                            <img src="img/flecha.png" alt="HYRA" class="img-fluid"/>
+                        </h6>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!--VIDEO DE LAPTOP-->
+     <div class="container-fluid py-5">
+        <div class="row">
+            <div class="col-12 col-lg-4 col-sm-12 col-md-12 bg-lap-texto">
+                <div class="row py-5">
+                    <h1 class="regular">
+                        <img src="img/hyra-statics.png" alt="HYRA STATICS" class="img-fluid logo-static pb-3"/>
+                    </h1>
+                    <h1 class="bold">REPORTE DE UNIDAD.</h1>
+                    <p class="light">Al finalizar, todas las unidades de HYRA arrojan un reporte <br>
+                    especializado, el cual te entregamos. El reporte de productividad <br>
+                    cuenta con diferentes indicadores de desempeño de la lógistica <br>
+                    como lo son:</p>
+                </div>
+                <div class="row py-2">
+                    <div class="col-12 col-lg-6 col-sm-12 col-md-12 pt-2">
+                        <img src="img/tiempo.gif" alt="HYRA" class="img-fluid icono-static me-3"/>
+                        <aside>
+                            <h6 class="light">
+                                TIEMPO TOTAL <br> DE VIAJE POR RUTA.
+                            </h6>
+                        </aside>
+                    </div>
+                    <div class="col-12 col-lg-6 col-sm-12 col-md-12 pt-2">
+                        <img src="img/mapa-detallado.gif" alt="HYRA" class="img-fluid icono-static me-3"/>
+                        <aside>
+                            <h6 class="light">
+                                MAPA DETALLADO DE  <br>RUTA COMPLETADA.
+                            </h6>
+                        </aside>
+                    </div>
+                </div>
+                <div class="row py-2">
+                    <div class="col-12 col-lg-6 col-sm-12 col-md-12 pt-2">
+                        <img src="img/tiempo-total.gif" alt="HYRA" class="img-fluid icono-static me-3"/>
+                        <aside>
+                            <h6 class="light">
+                                DISTANCIA TOTAL <br> POR RUTA
+                            </h6>
+                        </aside>
+                    </div>
+                    <div class="col-12 col-lg-6 col-sm-12 col-md-12 pt-2">
+                        <img src="img/tiempo-detenido.gif" alt="HYRA" class="img-fluid icono-static me-3"/>
+                        <aside>
+                            <h6 class="light">
+                                TIEMPO TOTAL <br> DETENIDO POR RUTA
+                            </h6>
+                        </aside>
+                    </div>
+                </div>
+                <div class="row py-2">
+                    <div class="col-12 col-lg-6 col-sm-12 col-md-12 pt-2">
+                        <img src="img/hora-inicial.gif" alt="HYRA" class="img-fluid icono-static me-3"/>
+                        <aside>
+                            <h6 class="light">
+                                HORA INICIAL <br> DE RUTA
+                            </h6>
+                        </aside>
+                    </div>
+                    <div class="col-12 col-lg-6 col-sm-12 col-md-12 pt-2">
+                        <img src="img/velocidad-promedio.gif" alt="HYRA" class="img-fluid icono-static me-3"/>
+                        <aside>
+                            <h6 class="light">
+                                VELOCIDAD PROMEDIO <br> POR RUTA
+                            </h6>
+                        </aside>
+                    </div>
+                </div>
+                <div class="row py-2">
+                    <div class="col-12 col-lg-6 col-sm-12 col-md-12 pt-2">
+                        <img src="img/hora-final.gif" alt="HYRA" class="img-fluid icono-static me-3"/>
+                        <aside>
+                            <h6 class="light">
+                                HORA FINAL <br> DE RUTA
+                            </h6>
+                        </aside>
+                    </div>
+                    <div class="col-12 col-lg-6 col-sm-12 col-md-12 pt-2">
+                        <img src="img/velocidad-maxima.gif" alt="HYRA" class="img-fluid icono-static me-3"/>
+                        <aside>
+                            <h6 class="light">
+                                VELOCIDAD MÁXIMA  <br> POR RUTA
+                            </h6>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-8 col-sm-12 col-md-12 bg-lap">
+                <div class="bg-lap">
+                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="w-100 content">
+                        <source src="vid/Laptop-Intro.mp4" type="video/mp4" />
+                    </video>
+                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="w-100 content2">
+                        <source src="vid/Laptop-loop.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
     
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+    <script src="js/lib/easy-waypoint-animate.js"></script>
+    <script src="js/lib/jquery.waypoints.min.js"></script>
+    
+    <script type="text/javascript">
+       function openNav() {
+        document.getElementById("sidebar").style.width = "545px";
+        document.getElementById("header").style.marginRight = "545px";
+        }
+
+        function closeNav() {
+        document.getElementById("sidebar").style.width = "0";
+        document.getElementById("header").style.marginRight= "0";
+        }
+    </script>
+    <script>
+        var $dipper = $('.dipper'); 
+            $dipper.waypoint(function(){
+                setTimeout(function() {
+                    $(".content").fadeOut(0);
+                },5950);
+            
+                setTimeout(function() {
+                    $(".content2").fadeIn(0);
+                },5900);
+            });
+    </script>
 </body>
 </html>

@@ -36,6 +36,9 @@ ul{
     list-style: none;
     font-family: 'Tili Light';
 }
+.button_container{
+    cursor: pointer;
+}
 /*VIDEO INDEX*/
 #header{
     position: relative;
@@ -360,15 +363,19 @@ ul li::before{
 }
 /*TERMMINA EL MENÚ DEL INDEX*/
 /*SIDE MENU*/
-.side-menu.active{
-    right: 543px;
+/*.side-menu.active{
+    right: 545px;
     position: relative;
-}
+}*/
 .menu-side{
-    position: absolute;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
     top: 0;
     right: 0;
-    background-color: #1E1E1E;
+    align-items: center;
+    justify-content: center;
 }
 .menu-side a span{
     color: #000000;
