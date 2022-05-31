@@ -383,49 +383,121 @@ ul li::before{
   /*TERMINA SIDE MENU*/
 @media (max-width:400px) {
     .overlay-image{
-        top: 10%;
+        top: 30%;
         left: 45%;
         max-width: 50px;
     }
     .bg-letras{
         margin-top: 100px;
     }
+    .bg-letras h3{
+        margin-top: 0;
+    }
     .bg-somos-letras{
         margin-left: 20px;
     }
     .seguridad-confianza-letras{
         margin-left: 5px;
+    }
+    .video-index{
+        margin-top: 300px;
+    }
+    .seguridad-confianza-letras p{
+        margin-left: 0!important;
+        padding: 15px;
+    }
+    .bg-lap-texto{
+        left: 0;
+        top: 250px;
+        margin-bottom: 200px;
+    }
+    .contenedor-videos {
+        margin-bottom: 150px;
+    }
+    .caja-texto h1{
+        margin-left: 0;
+    }
+    .bg-funcion-texto{
+        margin-left: 0;
     }
 }
 @media (max-width:500px) {
     .overlay-image{
-        top: 10%;
+        top: 30%;
         left: 45%;
         max-width: 50px;
     }
     .bg-letras{
         margin-top: 100px;
     }
+    .bg-letras h3{
+        margin-top: 0;
+    }
     .bg-somos-letras{
         margin-left: 20px;
     }
     .seguridad-confianza-letras{
         margin-left: 5px;
+    }
+    .video-index{
+        margin-top: 300px;
+    }
+    .seguridad-confianza-letras p{
+        margin-left: 0!important;
+        padding: 15px;
+    }
+    .bg-lap-texto{
+        left: 0;
+        top: 250px;
+        margin-bottom: 200px;
+    }
+    .contenedor-videos {
+        margin-bottom: 150px;
+    }
+    .caja-texto h1{
+        margin-left: 0;
+    }
+    .bg-funcion-texto{
+        margin-left: 0;
     }
 }
 @media (max-width:700px) {
     .overlay-image{
-        top: 10%;
+        top: 30%;
         left: 45%;
         max-width: 50px;
     }
     .bg-letras{
         margin-top: 100px;
     }
+    .bg-letras h3{
+        margin-top: 0;
+    }
     .bg-somos-letras{
         margin-left: 20px;
     }
     .seguridad-confianza-letras{
         margin-left: 5px;
+    }
+    .video-index{
+        margin-top: 300px;
+    }
+    .seguridad-confianza-letras p{
+        margin-left: 0!important;
+        padding: 15px;
+    }
+    .bg-lap-texto{
+        left: 0;
+        top: 250px;
+        margin-bottom: 200px;
+    }
+    .contenedor-videos {
+        margin-bottom: 150px;
+    }
+    .caja-texto h1{
+        margin-left: 0;
+    }
+    .bg-funcion-texto{
+        margin-left: 0;
     }
 }

@@ -11,6 +11,21 @@
     <title>HYRA</title>
 </head>
 <body>
+    <style>
+        #sidebar{
+            position: fixed;
+            width: 500px;
+            height: 100%;
+            background: #151719;
+            right: -500px;
+            display: none;
+            transition: all 500ms linear;
+        }
+        #sidebar.active{
+            right: 0;
+            display: block;
+        }
+    </style>
     <header id="header" class="bg-gris side-menu">
         <nav class="navbar navbar-expand-lg navbar-light bg-gris ">
             <div class="container pt-3">
@@ -49,13 +64,13 @@
             </div>
         </div>
     </header>
-    <div class="menu-side" id="sidebar">
+    <div  id="sidebar">
         <div class="row pt-5 ms-2 d-flex justify-content-center">
             <div class="col-12 col-lg-6 col-sm-12 col-md-12 text-center">
-            <img src="img/logo_sidemenu.png" alt="HYRA" class="img-fluid logo-header ms-5"/>
+                <img src="img/logo_sidemenu.png" alt="HYRA" class="img-fluid logo-header ms-5"/>
             </div>
             <div class="col-12 col-lg-6 col-sm-12 col-md-12 text-center">
-                <div class="button_container ms-3" onclick="closeNav()">
+                <div class="button_container ms-3">
                     <h1 class="h6 regular">
                         CERRAR
                         <img src="img/btn-menu.png" alt="HYRA" class="img-fluid ms-4 me-4"/> <br>
@@ -88,7 +103,6 @@
                         <span class="hover-menu" >CONOCE TODO SOBRE HYRA</span>
                     </a>
                 </div>
-               
             </div>
         </div>
         <div class="row ms-2 py-3 d-flex justify-content-center light" >
@@ -102,7 +116,6 @@
                         <span class="hover-menu">CONOCE NUESTRAS UNIDADES</span>
                     </a>
                 </div>
-                
             </div>
         </div>
         <div class="row ms-2 py-3 d-flex justify-content-center light">
@@ -128,9 +141,7 @@
                         <span><h1>CONTACTO</h1></span>
                         <span>¿TIENES DUDAS O COMENTARIOS?</span>
                     </a>
-                    
                 </div>
-                
             </div>
         </div>
     </div>
@@ -281,7 +292,7 @@
                     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="w-100 content">
                         <source src="vid/Laptop-Intro.mp4" type="video/mp4" />
                     </video>
-                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="w-100 content2">
+                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="w-100 content2" style="display: none;">
                         <source src="vid/Laptop-loop.mp4" type="video/mp4" />
                     </video>
                 </div>
@@ -296,6 +307,13 @@
     <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
     <script src="js/lib/easy-waypoint-animate.js"></script>
     <script src="js/lib/jquery.waypoints.min.js"></script>
+    <script>
+        const btnToggle = document.querySelector('.button_container');
+
+        btnToggle.addEventListener('click', function(){
+            document.getElementById('sidebar').classList.toggle('active');
+        });
+    </script>
     
     <script type="text/javascript">
        function openNav() {
