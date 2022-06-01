@@ -24,32 +24,36 @@
             cursor: pointer;
             outline: inherit;
         }
-
         #sidebar {
-            position: fixed;
+            top: 0;
+            position: absolute;
             width: 500px;
             height: 100%;
-            background: #151719;
             right: -500px;
+            color: #000000;
             /* display: none; */
             transition: all 500ms linear;
         }
-
+        #sidebar span{
+            color: #000000;
+        }
         #sidebar.active {
             right: 0;
-           
-            /* display: block; */
         }
-
+        #header.active{
+            right: 500px;
+        }
         #sidebar.close {
             right: 0;
-           
-            /* display: block; */
         }
-
-       
+        @media (max-width:700px) {
+            #sidebar{
+                width: 300px;
+                right: -300px;
+            }
+        }
     </style>
-    <header>
+     <header id="header" class="bg-gris side-menu">
         <nav class="navbar navbar-expand-lg navbar-light bg-gris ">
             <div class="container pt-3">
                 <a class="navbar-brand" href="index.html">
@@ -68,25 +72,41 @@
                 </div>
             </div>
         </nav>
+          <div class="container-fluid bg-gris py-5 side-menu wp-animated-group">
+            <div class="row">
+                <div class="col-12 col-lg-9 col-sm-12 col-md-12 bg-somos p-0 wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s">
+                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="w-100">
+                        <source src="vid/Sobre_Hyra.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div class="col-12 col-lg-3 col-sm-12 col-md-12 p-0 bg-somos-letras wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s">
+                    <h1 class="bold">LA LOGÍSTICA <br>INTELIGENTE <b class="regular">PARA <br> TU EMPRESA</b></h1>
+                    <p class="light">Renta de vehículos de carga sin operador para <br>
+                    transportar mercancía de cualquier giro dentro del <br>
+                    territorio nacional.</p>
+                    <a href="funcionamiento.html" class="none_a_decoration">
+                        <h3 class="h6"><u>CÓMO FUNCIONA</u> 
+                            <img src="img/flecha.png" alt="HYRA" class="img-fluid"/>
+                        </h3>
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
 
     <div id="sidebar">
-        <div class="row pt-5 ms-2 d-flex justify-content-center">
+        <div class="row pt-5 d-flex justify-content-center">
             <div class="col-12 col-lg-6 col-sm-12 col-md-12 text-center">
                 <img src="img/logo_sidemenu.png" alt="HYRA" class="img-fluid logo-header ms-5" />
             </div>
-            <div class="col-12 col-lg-6 col-sm-12 col-md-12 text-center">
-                <!-- <div class="button_close ms-3">
-                    <h1 class="h6 regular">
+            <div class="col-12 col-lg-6 col-sm-12 col-md-12 d-block d-sm-block d-md-none">
+                <div class="button_close ms-3 ">
+                    <h1 class="h6 bold">
                         <button class="btnmenu">
-                            <div class="d-flex justify-content-end container">
-                                CERRAR
-                            <img src="img/btn-menu.png" alt="HYRA" class="img-fluid ms-4 me-4" /> <br>
-                                <i class="far fa-times-circle text-light"></i>
-                            </div>
+                            CERRAR
                         </button>
                     </h1>
-                </div> -->
+                </div>
             </div>
         </div>
         <div class="row ms-2 py-3 d-flex justify-content-center light">
@@ -177,13 +197,19 @@
     <script src="js/lib/jquery.waypoints.js"></script>
     <script src="js/lib/jquery.waypoints.min.js"></script>
     <script src="js/script.js"></script>
-    <script>
+    <!--<script>
         const btnToggle = document.querySelector('.button_open');
 
         btnToggle.addEventListener('click', function () {
             document.getElementById('sidebar').classList.toggle('active');
+            document.getElementById('header').classList.toggle('active');
         });
-    </script>
+        const btnCerrar = document.querySelector('.button_close');
+        btnCerrar.addEventListener('click', function(){
+            document.getElementById('sidebar').classList.toggle('active');
+            document.getElementById('header').classList.toggle('active');
+        })
+    </script>-->
 
 </body>
 

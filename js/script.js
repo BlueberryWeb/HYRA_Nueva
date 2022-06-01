@@ -98,6 +98,18 @@ $(document).ready(function() {
     });
   }
   /*TERMINA ANIMACIONES */
+//SIDE MENU
+const btnToggle = document.querySelector('.button_open');
+
+btnToggle.addEventListener('click', function () {
+    document.getElementById('sidebar').classList.toggle('active');
+    document.getElementById('header').classList.toggle('active');
+});
+const btnCerrar = document.querySelector('.button_close');
+btnCerrar.addEventListener('click', function(){
+    document.getElementById('sidebar').classList.toggle('active');
+    document.getElementById('header').classList.toggle('active');
+})
 //Dipper
 
 var $dipper = $('.dipper'); 

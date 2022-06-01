@@ -13,22 +13,24 @@
 </head>
 <body class="index">
     <header id="header" class="bg-gris side-menu">
-        <nav class="navbar navbar-expand-lg navbar-light bg-gris">
+        <nav class="navbar navbar-expand-lg navbar-light bg-gris ">
             <div class="container pt-3">
-              <a class="navbar-brand" href="index.html">
-                  <img src="img/Logo-Hyra-ease-in.gif" alt="HYRA" class="img-fluid logo-header" />
-              </a>
-              <div class="navbar-nav ml-auto" > 
-                    <div class="button_container ms-3">
-                        <h1 class="h6">
-                            MENU
-                            <img src="img/btn-menu.png" alt="HYRA" class="img-fluid ms-4 me-4"/>
-                            <img src="img/flecha.png" alt="HYRA">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/Logo-Hyra-ease-in.gif" alt="HYRA" class="img-fluid logo-header" />
+                </a>
+                <div class="navbar-nav ml-auto">
+                    <div class="button_open ms-3 ">
+                        <h1 class="h6 bold">
+                            <button class="btnmenu">
+                                MENU
+                                <img src="img/btn-menu.png" alt="HYRA" class="img-fluid ms-4 me-4" />
+                                <img src="img/flecha.png" alt="HYRA" class="img-fluid" />
+                            </button>
                         </h1>
                     </div>
-              </div>
+                </div>
             </div>
-          </nav>
+        </nav>
           <div class="container-fluid bg-gris pt-5 side-menu wp-animated-group">
             <div class="row">
                 <div class="col-12 col-lg-9 col-sm-12 col-md-12 bg-funcion p-0 wp-animated" data-animation="fadeInDown" data-animation-duration="5s">
@@ -52,6 +54,98 @@
             </div>
         </div>
     </header>
+    <!--MENÚ-->
+    <div id="sidebar">
+        <div class="row pt-5 ms-2 d-flex justify-content-center">
+            <div class="col-12 col-lg-6 col-sm-12 col-md-12 text-center">
+                <img src="img/logo_sidemenu.png" alt="HYRA" class="img-fluid logo-header ms-5" />
+            </div>
+            <div class="col-12 col-lg-6 col-sm-12 col-md-12 d-block d-sm-block d-md-none">
+                <div class="button_close ms-3 ">
+                    <h1 class="h6 bold">
+                        <button class="btnmenu">
+                            CERRAR
+                        </button>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="row ms-2 py-3 d-flex justify-content-center light">
+            <div class="col-12 col-lg-1 col-sm-12 col-md-12 pt-3">
+                <span>01</span>
+            </div>
+            <div class="col-12 col-lg-8 col-sm-12 col-md-12 light">
+                <div class="menu" data-animation="to-top">
+                    <a href="index.html" class="none_a_decoration">
+                        <span>
+                            <h1>INICIO</h1>
+                        </span>
+                        <span class="hover-menu">BIENVENIDO AL MUNDO HYRA</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row ms-2 py-3 d-flex justify-content-center light">
+            <div class="col-12 col-lg-1 col-sm-12 col-md-12 pt-3">
+                <span>02</span>
+            </div>
+            <div class="col-12 col-lg-8 col-sm-12 col-md-12">
+                <div class="menu" data-animation="to-top">
+                    <a href="sobre.html" class="none_a_decoration">
+                        <span>
+                            <h1>SOBRE HYRA</h1>
+                        </span>
+                        <span class="hover-menu">CONOCE TODO SOBRE HYRA</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row ms-2 py-3 d-flex justify-content-center light">
+            <div class="col-12 col-lg-1 col-sm-12 col-md-12 pt-3">
+                <span>03</span>
+            </div>
+            <div class="col-12 col-lg-8 col-sm-12 col-md-12">
+                <div class="menu" data-animation="to-top">
+                    <a href="unidades.html" class="none_a_decoration">
+                        <span>
+                            <h1>UNIDADES</h1>
+                        </span>
+                        <span class="hover-menu">CONOCE NUESTRAS UNIDADES</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row ms-2 py-3 d-flex justify-content-center light">
+            <div class="col-12 col-lg-1 col-sm-12 col-md-12 pt-3">
+                <span>04</span>
+            </div>
+            <div class="col-12 col-lg-8 col-sm-12 col-md-12">
+                <div class="menu" data-animation="to-top">
+                    <a href="funcionamiento.html" class="none_a_decoration">
+                        <span>
+                            <h1>CÓMO FUNCIONA</h1>
+                        </span>
+                        <span class="hover-menu">TE EXPLICAMOS CÓMO RENTAR</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row ms-2 py-3 d-flex justify-content-center light">
+            <div class="col-12 col-lg-1 col-sm-12 col-md-12 pt-3 pb-5">
+                <span>05</span>
+            </div>
+            <div class="col-12 col-lg-8 col-sm-12 col-md-12">
+                <div class="menu" data-animation="to-top">
+                    <a href="contacto.html" class="none_a_decoration">
+                        <span>
+                            <h1>CONTACTO</h1>
+                        </span>
+                        <span>¿TIENES DUDAS O COMENTARIOS?</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
    
     
     <!--PARA RENTAR UNA UNIDAD HYRA-->
