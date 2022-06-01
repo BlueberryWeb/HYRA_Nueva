@@ -182,6 +182,7 @@ ul{
 }
 .formulario input{
     background: transparent;
+    color: #fff;
 }
 .formulario ::placeholder{
     color: #fff;
