@@ -30,12 +30,14 @@ require './vendor/autoload.php';
 // Replace sender@example.com with your "From" address.
 // This address must be verified with Amazon SES.
 $sender = 'noreply.blueberry@gmail.com';
-$senderName = 'Página HYRA';
+$senderName = 'Pagina HYRA';
 
 // Replace recipient@example.com with a "To" address. If your account
 // is still in the sandbox, this address must be verified.
 $recipient1 = 'pruebascorreosbb@gmail.com';
 $recipient2 = 'noreply.blueberry@gmail.com';
+$recipient3 = 'fidelberry1@gmail.com';
+$recipient4 = 'ventas01bb@gmail.com';
 
 // Replace smtp_username with your Amazon SES SMTP user name.
 $usernameSmtp = 'noreply.blueberry@gmail.com';
@@ -58,7 +60,7 @@ $host = 'smtp.gmail.com';
 $port = 587;
 
 // The subject line of the email
-$subject = 'Página HYRA';
+$subject = 'Pagina HYRA';
 
 // The plain-text body of the email
 $bodyText =  "Correo de la web";
@@ -85,7 +87,7 @@ $bodyHtml = '
         <table role="presentation" style="width:602px;border-collapse:collapse;border:0px solid #cccccc;border-spacing:0;text-align:left; font-family: sans-serif;">
           <tr>
             <td align="left" style="padding:10px 0 30px 0; font-family: sans-serif;">
-              <img src="https://i.postimg.cc/vHX6QB70/Bueberrypostivo.jpg" alt="DIRÉ MÓVIL" width="200" style="height:auto;display:block;" />
+              <img src="https://i.postimg.cc/Kz1zh6ft/logo-sidemenu.png" alt="HYRA" width="200" style="height:auto;display:block;" />
               <hr>
             </td>
           </tr>
