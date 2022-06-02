@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/animate.css"/>
     <link rel="shortcut icon" href="img/favicon.png" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>HYRA</title>
 </head>
 <body class="index">
@@ -231,7 +232,27 @@
                 <img src="img/bg-video.jpg" alt="HYRA" class="img-fluid"/>
             </div>
             <div class="overlay">
-                <img src="img/btn-video.gif" alt="Play" class="img-fluid overlay-image"/>
+                <img src="img/btn-video.gif" alt="Play" class="img-fluid overlay-image"  data-bs-toggle="modal" data-bs-target="#HYRA"/>
+            </div>
+        </div>
+    </div>
+      <!--Modal-->
+      <div class="modal" id="HYRA" tabindex="-1" aria-labelledby="HYRALabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modal-body">
+                    <div class="container">
+                        <div class="row d-flex justify-content-center">
+                            <div style="padding:56.25% 0 0 0;position:relative;">
+                                <iframe src="https://player.vimeo.com/video/716430635?h=c3a10512cd&autoplay=1"frameborder="0" allow=" fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="HYRA"></iframe>
+                            </div>
+                            <script src="https://player.vimeo.com/api/player.js"></script>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -299,6 +320,9 @@
                                     <input required type="text" class="form-control borde-bottom" id="exampleFormControlInput1" name="message" placeholder="MENSAJE" required>
                                 </div>
                             </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="g-recaptcha" data-sitekey="6LfVwTsgAAAAABS8UvYnHxsboJv9EoiZRQibEgaA"></div>
                         </div>
                         <div class="text-end  wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s">
                             <button class="btn btn-primary btn-formulario" type="submit">
@@ -419,6 +443,7 @@
     <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/script.js"></script>
     <script src="js/lib/easy-waypoint-animate.js"></script>
     <script src="js/lib/jquery.waypoints.js"></script>

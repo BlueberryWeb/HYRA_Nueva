@@ -110,6 +110,34 @@ btnCerrar.addEventListener('click', function(){
     document.getElementById('sidebar').classList.toggle('active');
     document.getElementById('header').classList.toggle('active');
 })
+
+
+//RECAPTCHA
+
+function miFuncion() {
+    var response = grecaptcha.getResponse();
+
+    if (response.length == 0) {
+
+      // window.alert("Favor de llenar el captcha");
+      Swal.fire({
+        title: 'Error',
+        text: 'El campo "No soy un robot" no esta seleccionado',
+        icon: 'error',
+        confirmButtonText: 'Ok',
+        confirmButtonColor: '#000000',
+      })
+      event.preventDefault();
+      // window.history.back();       
+    } else {
+
+      Swal.fire(
+        'Correo enviado',
+        'Nos pondremos en contacto contigo a la brevedad',
+        'success'
+      )
+    }
+  }
 //Dipper
 
 var $dipper = $('.dipper'); 

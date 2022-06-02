@@ -219,7 +219,7 @@ ul li::before{
     cursor: pointer;
     z-index: 2;
     top: 30%;
-    left: 36%;
+    left: 45%;
 }
 .menu-hover span{
     visibility: hidden;
@@ -397,6 +397,14 @@ ul li::before{
     right: 0;
 }
   /*TERMINA SIDE MENU*/
+
+.modal-content, .modal-header{
+    background: none;
+    border: none;
+}
+.btn-close{
+    color: #fff!important;
+}
 @media (max-width:400px) {
     .overlay-image{
         top: 30%;
