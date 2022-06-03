@@ -10,6 +10,10 @@
     font-family: 'Tili Regular';
     src: url("fonts/TitilliumWeb-Regular.ttf"); 
 }
+html, body {
+   	width: 100% !important;
+   	overflow-x: hidden;
+}
 .fa-square, .fa-circle i{
     background-color: #fff;
     color: #fff;
