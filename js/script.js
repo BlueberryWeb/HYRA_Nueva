@@ -117,7 +117,7 @@ btnCerrar.addEventListener('click', function(){
 $('#form').submit(function (event) {
     event.preventDefault();
     grecaptcha.ready(function () {
-        grecaptcha.execute('6LfVwTsgAAAAABS8UvYnHxsboJv9EoiZRQibEgaA', { action: 'registro' }).then(function (token) {
+        grecaptcha.execute('6Lc-lFogAAAAAA8_hVa4zTan64XhuUrXk3C6EtY5', { action: 'registro' }).then(function (token) {
             $('#form').prepend('<input type="hidden" name="token" value="' + token + '">');
             $('#form').prepend('<input type="hidden" name="action" value="registro">');
             $('#form').unbind('submit').submit();

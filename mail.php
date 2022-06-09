@@ -95,7 +95,7 @@ $mail = new PHPMailer(true);
 
 
 // Ingresa tu clave secreta.....
-define("RECAPTCHA_V3_SECRET_KEY", '6LfVwTsgAAAAAKuRRP1RUTnmkf31wj4ZkvTIovEh');
+define("RECAPTCHA_V3_SECRET_KEY", '6Lc-lFogAAAAAK60fJkzz6r4LmoBQt2eBdHCILAz');
 $token = $_POST['token'];
 $action = $_POST['action'];
 
