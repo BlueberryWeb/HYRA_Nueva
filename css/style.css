@@ -10,6 +10,9 @@
     font-family: 'Tili Regular';
     src: url("fonts/TitilliumWeb-Regular.ttf"); 
 }
+.grecaptcha-badge {
+    visibility: hidden;
+} 
 html, body {
    	width: 100% !important;
    	overflow-x: hidden;
