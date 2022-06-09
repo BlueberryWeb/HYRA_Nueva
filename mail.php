@@ -11,20 +11,20 @@ use PHPMailer\PHPMailer\Exception;
 
 require './vendor/autoload.php';
 
-$sender = 'noreply.blueberryvideo@gmail.com';
+$sender = 'noreply.hyra@gmail.com';
 $senderName = 'Pagina Blueberry video';
 $recipient1 = 'pruebascorreosbb@gmail.com';
-$recipient2 = 'noreply.blueberry@gmail.com';
+$recipient2 = 'noreply.hyra@gmail.com';
 $recipient3 = 'fidelberry1@gmail.com';
 $recipient4 = 'ventas01bb@gmail.com';
 $recipient5 = 'leasinghyra@gmail.com';
 
-$usernameSmtp = 'noreply.blueberryvideo@gmail.com';
-$passwordSmtp = 'hdgybzekimhkzhus';
+$usernameSmtp = 'noreply.hyra@gmail.com';
+$passwordSmtp = 'qlmyzqmlybdvnrns';
 $configurationSet = 'ConfigSet';
 $host = 'smtp.gmail.com';
 $port = 587;
-$subject = 'Mensaje de textilo en la web';
+$subject = 'Mensaje de HYRA en la web';
 $bodyText =  "Correo de la web";
 $bodyHtml = '
 
@@ -95,7 +95,7 @@ $mail = new PHPMailer(true);
 
 
 // Ingresa tu clave secreta.....
-define("RECAPTCHA_V3_SECRET_KEY", '6LcbFlUgAAAAALajj57uqSPKg-7BdSqlyTQMZ242');
+define("RECAPTCHA_V3_SECRET_KEY", '6LfVwTsgAAAAAKuRRP1RUTnmkf31wj4ZkvTIovEh');
 $token = $_POST['token'];
 $action = $_POST['action'];
 
@@ -123,7 +123,11 @@ if ($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrR
         $mail->SMTPAuth   = true;
         $mail->SMTPSecure = 'tls';
         $mail->addCustomHeader('X-SES-CONFIGURATION-SET', $configurationSet);
-        $mail->addAddress($recipient);
+        $mail->addAddress($recipient1);
+        $mail->addAddress($recipient2);
+        $mail->addAddress($recipient3);
+        $mail->addAddress($recipient4);
+        $mail->addAddress($recipient5);
         $mail->isHTML(true);
         $mail->Subject    = $subject;
         $mail->Body       = $bodyHtml;
