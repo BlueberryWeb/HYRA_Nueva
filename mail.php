@@ -60,10 +60,10 @@ $bodyHtml = '
                     <center>
                       <h4 style="margin:0 0 12px 0;font-size: 20px; text-align: center; font-family: sans-serif;">Se ha capturado un nuevo lead en <b style="font-weight: 600; color: black;">HYRA</b></h4>
                       <ul style="color: #aba9a8; list-style: none; text-align: center;">
-                        <li style="margin-bottom: 10px;">Correo electrónico: '.$email.'</li>
-                        <li style="margin-bottom: 10px;">Nombre: '.$nombre.'</li>
-                        <li style="margin-bottom: 10px;">Telefono: '.$telefono.'</li>
-                        <li style="margin-bottom: 10px;">Mensaje: '.$mensaje.'</li>
+                        <li style="margin-bottom: 10px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;">Correo electrónico: '.$email.'</li>
+                        <li style="margin-bottom: 10px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;">Nombre: '.$nombre.'</li>
+                        <li style="margin-bottom: 10px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;">Telefono: '.$telefono.'</li>
+                        <li style="margin-bottom: 10px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;">Mensaje: '.$mensaje.'</li>
                       </ul>
                     </center>
                     </td>
