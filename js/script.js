@@ -124,6 +124,7 @@ $('#form').submit(function (event) {
         });
     });
 });
+
 //Dipper
 
 var $dipper = $('.dipper'); 
