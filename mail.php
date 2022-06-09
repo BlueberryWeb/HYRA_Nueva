@@ -12,7 +12,7 @@ use PHPMailer\PHPMailer\Exception;
 require './vendor/autoload.php';
 
 $sender = 'noreply.hyra@gmail.com';
-$senderName = 'Pagina Blueberry video';
+$senderName = 'Nuevo Contacto en hyra.mx';
 $recipient1 = 'pruebascorreosbb@gmail.com';
 $recipient2 = 'noreply.hyra@gmail.com';
 $recipient3 = 'fidelberry1@gmail.com';
@@ -34,11 +34,6 @@ $bodyHtml = '
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <meta name="x-apple-disable-message-reformatting"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
-  <title></title>
 </head>
 <body style="margin:0;padding:0;">
   <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;background:#ffffff; font-family: sans-serif;">
@@ -145,13 +140,3 @@ if ($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrR
     echo "Lo siento, parece que eres un Robot";
 }
 ?>
-
-
-
-
-
-
-
-
-
-
