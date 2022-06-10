@@ -36,41 +36,39 @@ $bodyHtml = '
   <meta name="x-apple-disable-message-reformatting"/>
 </head>
 <body style="margin:0;padding:0;">
-  <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;background:#ffffff; font-family: sans-serif;">
+  <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;background:#ffffff; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;">
     <tr>
       <td align="center" style="padding:0;">
-        <table role="presentation" style="width:602px;border-collapse:collapse;border:0px solid #cccccc;border-spacing:0;text-align:left; font-family: sans-serif;">
+        <table role="presentation" style="width:602px;border-collapse:collapse;border:0px solid #cccccc;border-spacing:0;text-align:left; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;">
           <tr>
-            <td align="left" style="padding:10px 0 30px 0; font-family: sans-serif;">
+            <td align="left" style="padding:10px 0 30px 0; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;">
               <img src="https://i.postimg.cc/Kz1zh6ft/logo-sidemenu.png" alt="HYRA" width="200" style="height:auto;display:block;" />
               <hr>
             </td>
           </tr>
           <tr>
-            <td style="padding:0px 30px 42px 20px; font-family: sans-serif;">
-              <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0; font-family: sans-serif;">
+            <td style="padding:0px 30px 42px 20px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;">
+              <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;">
                 <tr>
-                  <td style="padding:0 0 36px 0;color:#153643; font-family: sans-serif;">
+                  <td style="padding:0 0 36px 0;color:#153643; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;">
                     <img src="https://i.postimg.cc/k4Jn15MD/Nuevo-Contacto.png" alt="NUEVO CONTACTO" style="max-width: 500px; margin-left: 50px; margin-bottom: 60px; margin-top: 20px;"/>
-                    <center>
-                      <h4 style="margin:0 0 12px 0;font-size: 20px; text-align: center; font-family: sans-serif;">Se ha capturado un nuevo lead en <b style="font-weight: 600; color: black;">HYRA</b></h4>
                       <ul style="color: #aba9a8; list-style: none; text-align: center;">
-                        <li style="margin-bottom: 10px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;">Correo electrónico: '.$email.'</li>
-                        <li style="margin-bottom: 10px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;">Nombre: '.$nombre.'</li>
-                        <li style="margin-bottom: 10px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;">Telefono: '.$telefono.'</li>
-                        <li style="margin-bottom: 10px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;">Mensaje: '.$mensaje.'</li>
+                        <li><h4 style="margin:0 0 12px 0;font-size: 20px;  margin-bottom: 50px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;">Se ha capturado un nuevo lead:</h4></li>
+                        <li style=" font-size: 20px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;"><h4><b style="color: #666666;"> Correo electrónico: </b>'.$email.' </h4></li>
+                        <li style=" font-size: 20px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;"><h4><b style="color: #666666;"> Nombre: '.$nombre.'  </b></h4></li>
+                        <li style=" font-size: 20px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;"><h4><b style="color: #666666;" Telefono: '.$telefono.'  </b></h4></li>
+                        <li style=" font-size: 20px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;"><h4><b style="color: #666666;" Mensaje: '.$mensaje.' </b> </h4></li>
                       </ul>
-                    </center>
                     </td>
                 </tr>
               </table>
             </td>
           </tr>
           <tr>
-            <td style="padding:30px;background:#000000; font-family: sans-serif;">
+            <td style="padding:30px;background:#000000; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;">
               <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;font-size:9px; font-family:  sans-serif;">
                 <tr>
-                  <td style="padding:0;width:50%; font-family: sans-serif;" align="right">
+                  <td style="padding:0;width:50%; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;" align="right">
                     <img src="https://i.postimg.cc/4dpfLLNY/materialized-blueberry.gif" alt="MATERIALIZED BY Blueberry"/>
                   </td>
                 </tr>
