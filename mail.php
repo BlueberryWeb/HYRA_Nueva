@@ -14,9 +14,9 @@ require './vendor/autoload.php';
 $sender = 'noreply.hyra@gmail.com';
 $senderName = 'Nuevo Contacto en hyra.mx';
 $recipient1 = 'pruebascorreosbb@gmail.com';
-$recipient2 = 'noreply.hyra@gmail.com';
+$recipient2 = 'Litdmex@gmail.com';
 $recipient3 = 'fidelberry1@gmail.com';
-$recipient4 = 'ventas01bb@gmail.com';
+$recipient4 = 'Yackeline.hyra@gmail.com';
 $recipient5 = 'leasinghyra@gmail.com';
 
 $usernameSmtp = 'noreply.hyra@gmail.com';
