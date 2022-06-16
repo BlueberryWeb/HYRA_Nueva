@@ -13,12 +13,11 @@ require './vendor/autoload.php';
 
 $sender = 'noreply.hyra@gmail.com';
 $senderName = 'Nuevo Contacto en hyra.mx';
-/*$recipient1 = 'pruebascorreosbb@gmail.com';
+$recipient1 = 'pruebascorreosbb@gmail.com';
 $recipient2 = 'Litdmex@gmail.com';
 $recipient3 = 'fidelberry1@gmail.com';
 $recipient4 = 'Yackeline.hyra@gmail.com';
-$recipient5 = 'leasinghyra@gmail.com';*/
-$recipient7 ='noreply.hyra@gmail.com';
+$recipient5 = 'leasinghyra@gmail.com';
 
 $usernameSmtp = 'noreply.hyra@gmail.com';
 $passwordSmtp = 'qlmyzqmlybdvnrns';
@@ -117,11 +116,11 @@ if ($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrR
         $mail->SMTPAuth   = true;
         $mail->SMTPSecure = 'tls';
         $mail->addCustomHeader('X-SES-CONFIGURATION-SET', $configurationSet);
-        $mail->addAddress($recipient7);
-        /*$mail->addAddress($recipient2);
+        $mail->addAddress($recipient1);
+        $mail->addAddress($recipient2);
         $mail->addAddress($recipient3);
         $mail->addAddress($recipient4);
-        $mail->addAddress($recipient5);*/
+        $mail->addAddress($recipient5);
         $mail->isHTML(true);
         $mail->Subject    = $subject;
         $mail->Body       = $bodyHtml;
